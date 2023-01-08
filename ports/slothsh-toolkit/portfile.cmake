@@ -1,7 +1,7 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO SoulXP/slothsh-toolkit
-    REF bd863a85b8affc3d7da32e743806972f6e1fbb85
+    REF 5ab4266f0038eba56856ff42fe6277646b9a9a89
     SHA512 0
     HEAD_REF main
     )
@@ -9,7 +9,7 @@ vcpkg_from_github(
 vcpkg_configure_cmake(
     SOURCE_PATH "${SOURCE_PATH}"
     PREFER_NINJA
-    )
+)
 
 vcpkg_install_cmake()
 vcpkg_fixup_cmake_targets()
