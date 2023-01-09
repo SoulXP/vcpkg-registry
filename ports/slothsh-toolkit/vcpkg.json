@@ -2,5 +2,11 @@
     "name": "slothsh-toolkit",
     "version": "0.0.1",
     "description": "Library development tools & goodies by slothsh.",
-    "homepage": "https://github.com/SoulXP/slothsh-toolkit"
+    "homepage": "https://github.com/SoulXP/slothsh-toolkit",
+    "dependencies": [
+        {
+            "name": "magic_enum",
+            "version>=": "0.8.2"
+        }
+    ]
 }
