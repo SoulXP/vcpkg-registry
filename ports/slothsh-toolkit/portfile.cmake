@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO SoulXP/slothsh-toolkit
-    REF 5ab4266f0038eba56856ff42fe6277646b9a9a89
-    SHA512 0c7a5072ecc63fda7d444912d03c4eba5c5ea4a4e22114ba778cb80ebec98aa9a3f505108b6e6a64169e532e0f65f49544a505a16257a26934a76ce0e3d73506
+    REF acd58e533c84df0ab22640439fde4237dc3b63fe
+    SHA512 0
     HEAD_REF main
     )
 
