@@ -5,7 +5,7 @@
     "homepage": "https://github.com/SoulXP/slothsh-toolkit",
     "license": "MIT",
     "dependencies": [
-        "magic_enum",
+        "magic-enum",
         {
             "name": "vcpkg-cmake",
             "host": true
