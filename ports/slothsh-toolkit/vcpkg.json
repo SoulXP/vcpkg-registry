@@ -3,7 +3,16 @@
     "version": "0.0.1",
     "description": "Library development tools & goodies by slothsh.",
     "homepage": "https://github.com/SoulXP/slothsh-toolkit",
+    "license": "MIT",
     "dependencies": [
+        {
+            "name": "vcpkg-cmake",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake-config",
+            "host": true
+        },
         {
             "name": "magic_enum",
             "version>=": "0.8.2"
