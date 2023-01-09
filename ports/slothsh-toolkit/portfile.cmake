@@ -8,14 +8,18 @@ vcpkg_from_github(
 
 vcpkg_configure_cmake(
     SOURCE_PATH "${SOURCE_PATH}"
-    PREFER_NINJA
+    OPTIONS
+        -DSLOTHSH_TOOLKIT_OPT_BUILD_BENCHMARKS=OFF
+        -DSLOTHSH_TOOLKIT_OPT_BUILD_EXAMPLES=OFF
+        -DSLOTHSH_TOOLKIT_OPT_BUILD_TESTS=OFF
+        -DSLOTHSH_TOOLKIT_OPT_INSTALLL=ON
 )
 
 vcpkg_install_cmake()
-vcpkg_fixup_cmake_targets()
+vcpkg_cmake_config_fixup()
 
-file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug" "${CURRENT_PACKAGES_DIR}/lib")
 
 file(INSTALL "${SOURCE_PATH}/LICENSE"
-     DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}"
-     RENAME copyright)
+     DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}/copyright"
+     COPYONLY)
