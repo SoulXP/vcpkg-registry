@@ -16,9 +16,9 @@ vcpkg_configure_cmake(
 )
 
 vcpkg_install_cmake()
-vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/slothsh-toolkit PACKAGE_NAME slothsh-toolkit)
+vcpkg_cmake_config_fixup(PACKAGE_NAME slothshtoolkit)
 
-file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug" "${CURRENT_PACKAGES_DIR}/lib")
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
 
 file(INSTALL "${SOURCE_PATH}/LICENSE"
      DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}/copyright"
